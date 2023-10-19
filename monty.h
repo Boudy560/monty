@@ -42,14 +42,14 @@ typedef struct instruction_s
 extern st_t *head;
 typedef void (*op_func)(st_t **, unsigned int);
 
-// file operations
+/* file operations */
 void op_f(char *file_name);
 int pa_l(char *buffer, int line_number, int format);
 void re_f(FILE *);
 int len_ch(FILE *);
 void fi_fu(char *, char *, int, int);
 
-// Stack operations
+/* Stack operations */
 st_t *cr_no(int n);
 void fr_no(void);
 void pr_st(st_t **, unsigned int);
@@ -63,19 +63,19 @@ void po_to(st_t **, unsigned int);
 void nop(st_t **, unsigned int);
 void sw_no(st_t **, unsigned int);
 
-// Math operations with nodes
+/* Math operations with nodes */
 void add_no(st_t **, unsigned int);
 void su_no(st_t **, unsigned int);
 void di_no(st_t **, unsigned int);
 void mul_no(st_t **, unsigned int);
 void mo_no(st_t **, unsigned int);
 
-// String operations
+/* String operations */
 void pri_ch(st_t **, unsigned int);
 void pri_str(st_t **, unsigned int);
 void rotl(st_t **, unsigned int);
 
-// Error hanlding
+/* Error handling */
 void err(int error_code, ...);
 void mo_er(int error_code, ...);
 void str_err(int error_code, ...);
